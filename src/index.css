@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat";
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1297b831;
+}
+
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  color: white;
+}
+
+/* Loader animation */
+
+.s {
+  animation: s 1s infinite;
+}
+
+@keyframes s {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+
+.n {
+  animation: n 1s infinite;
+}
+
+@keyframes n {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.m {
+  animation: m 1s infinite;
+}
+
+@keyframes m {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* INPUT STYLING */
+
+input,textarea{
+  height: 40px;
+  border: 1px solid gray;
+  width: 100%;
+  padding-left: 20px;
+}
+
+input:focus{
+  outline: none;
+  border: 2px solid rgb(24, 23, 23);
+}
+
+textarea{
+  height: 100px;
+  padding-top: ;
+}
