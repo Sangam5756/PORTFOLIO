@@ -11,7 +11,8 @@ function Projects() {
     <div>
       <SectionTitle title={"Projects"} />
       <div className="flex py-10 gap-20 sm:flex-col">
-        <div className="flex flex-col gap-10 border-l-2 border-[#135e4c82] w-1/3 sm:gap-5 sm:flex-row sm:overflow-x-auto sm:w-full">
+       <div className="sm:projectscroll">
+       <div className="flex flex-col gap-10 border-l-2 border-[#135e4c82] sm:h-28 w-1/3 sm:gap-1 sm:flex-row sm:overflow-y-hidden sm:overflow-x-scroll sm:w-full">
           <div className="flex sm:flex-row sm:gap-5 flex-col">
             {projects.map((project, index) => (
               <div
@@ -36,6 +37,7 @@ function Projects() {
             ))}
           </div>
         </div>
+       </div>
 
         <div className="flex items-center justify-center gap-10 sm:flex-col">
           <img

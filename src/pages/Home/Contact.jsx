@@ -6,7 +6,7 @@ function Contact() {
   const { loading, portfoliodata } = useSelector((state) => state.root);
 
   return (
-    <div>
+    <div className="mt-10">
       <SectionTitle title={"Say Hello"} />
 
       <div className="flex sm:flex-col items-center justify-between">

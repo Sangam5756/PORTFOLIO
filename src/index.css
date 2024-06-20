@@ -13,15 +13,20 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+.projectscrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #0a192f;
+  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #1297b831;
+  width: 1px;
 }
 
 i {
