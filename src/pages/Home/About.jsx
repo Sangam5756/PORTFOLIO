@@ -36,7 +36,7 @@ function About({aboutRef}) {
         </h1>
         <div className="flex flex-wrap gap-10 mt-5">
           {skills.map((skill, index) => (
-            <div key={index} className="text-tertiery border border-tertiery py-3 px-10">
+            <div key={index} className="text-tertiery    bg-sky-900 hover:bg-red-600 hover:text-white border border-tertiery py-3 px-10">
               <h1 >{skill} </h1>
             </div>
           ))}

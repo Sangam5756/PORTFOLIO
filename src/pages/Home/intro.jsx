@@ -18,8 +18,12 @@ const handleGetStartedClick = () => {
   return (
     <>
       <div className="h-[80vh] bg-primary flex flex-col items-start justify-center gap-8 py-10">
-        <h1 className="text-white font-semibold ">{welcomeText}</h1>
+        <h1 className="text-white font-semibold ">
+        <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=Hi+There!+👋;" />
+        
+        </h1>
         <h1 className=" text-7xl sm:text-3xl text-secondary font-semibold">
+        <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=I'm;" />
           {firstName || " "} {lastName || " "}
         </h1>
         <h1 className="text-7xl sm:text-3xl text-white font-semibold">

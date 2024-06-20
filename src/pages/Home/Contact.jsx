@@ -4,8 +4,6 @@ import {contact} from "../../../resources/contact.js"
 function Contact() {
 
   const { loading, portfoliodata } = useSelector((state) => state.root);
-  // const { contact} = portfoliodata;
-  // console.log("contact",contact)
 
   return (
     <div>
