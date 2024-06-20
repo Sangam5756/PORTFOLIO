@@ -1,11 +1,13 @@
 import { useSelector } from "react-redux";
 import { useRef } from "react";
 import About from "./About";
+import {Intro} from "../../../resources/intro.js"
 function intro() {
   const { loading, portfoliodata } = useSelector((state) => state.root);
-  const { intro } = portfoliodata;
-  const { firstName, lastName, welcomeText, description, caption } = intro;
-
+  // const { intro } = portfoliodata;
+  const { firstName, lastName, welcomeText, description, caption } = Intro;
+  // console.log("intro",intro)
+  // console.log("Intro",Intro)
   const aboutRef = useRef(null);
 
 const handleGetStartedClick = () => {

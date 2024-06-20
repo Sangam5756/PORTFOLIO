@@ -6,6 +6,8 @@ function Experiences() {
   const [selectedItemIndex, setSelectedItemIndex] =useState(0);
   const {  portfoliodata } = useSelector((state) => state.root);
   const { experiences } = portfoliodata;
+
+  console.log("experiecne",experiences)
   
 
   return (

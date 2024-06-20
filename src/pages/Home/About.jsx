@@ -1,11 +1,13 @@
 /* eslint-disable react/jsx-key */
 import { useSelector } from "react-redux";
 import SectionTitle from "../../components/SectionTitle";
-
+import { about } from "../../../resources/abouts";
 function About({aboutRef}) {
-  const { loading, portfoliodata } = useSelector((state) => state.root);
-  const { about } = portfoliodata;
-  const {skills, lottieURL, description1, description2} = about;
+  
+  const { loading} = useSelector((state) => state.root);
+  
+  
+  const {skills, lottieURL, description1, description2} = about[0];
   return (
     <div  ref={aboutRef} className="about-section">
       <SectionTitle title={"About"} />

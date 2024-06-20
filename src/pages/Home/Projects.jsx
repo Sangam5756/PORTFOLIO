@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 function Projects() {
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
   const { portfoliodata } = useSelector((state) => state.root);
-  const { projects } = portfoliodata;
+
   return (
     <div>
       <SectionTitle title={"Projects"} />
