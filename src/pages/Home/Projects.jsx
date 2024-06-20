@@ -21,6 +21,7 @@ function Projects() {
                   setSelectedItemIndex(index);
                 }}
               >
+                
                 <h1
                   className={`text-xl px-5 ${
                     selectedItemIndex === index
@@ -30,7 +31,8 @@ function Projects() {
                 >
                   {project.title}
                 </h1>
-              </div>
+                </div>
+              
             ))}
           </div>
         </div>
@@ -43,7 +45,8 @@ function Projects() {
           />
 
           <div className="flex flex-col gap-5">
-            <h1 className="text-secondary text-xl">
+           <div className="sm:text-center ">
+           <h1 className="text-secondary text-xl">
               {projects[selectedItemIndex].title}{" "}
               {projects[selectedItemIndex].link && ( 
                 <a
@@ -57,13 +60,16 @@ function Projects() {
             <p className="text-white">
               {projects[selectedItemIndex].description}
             </p>
+           </div>
 
-            <a
-              className="text-tertiery text-2xl"
+           <div className="sm:flex items-center justify-center">
+           <a
+              className=" text-2xl bg-red-600 hover:bg-red-700 py-1 px-3 text-center w-fit rounded-full text-white"
               href={projects[selectedItemIndex].githubrepo || ""}
             >
               Github-Repo
             </a>
+           </div>
           </div>
         </div>
       </div>
