@@ -20,7 +20,7 @@ const Project_Slider = () => {
   return (
     <Slider {...settings}>
       {projects.map((project, index) => (
-        <div key={index} className='w-[500px] overflow-x-scroll projectscrollbar flex flex-col items-center justify-center ' >
+        <div key={index} className='w-[500px] overflow-x-scroll projectscrollbar  mr-5 ' >
           <div className="flex items-center h-[500px] w-[400px] justify-center gap-10 sm:flex-col">
             <div>
               <img src={project.image} alt="project-image" className="h-60 w-72  mix-blend-multiply" />
