@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import LeftSider from "./LeftSider";
+import Project_Slider from "./Project_Slider";
 function index() {
   return (
     <div>
