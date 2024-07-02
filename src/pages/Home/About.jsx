@@ -10,7 +10,8 @@ function About({aboutRef}) {
   const {skills, lottieURL, description1, description2} = about[0];
   return (
     <div  ref={aboutRef} className="about-section">
-      <SectionTitle title={"About"} />
+      <div className="sm:mt-5"></div>
+      <SectionTitle  title={"About"} />
       <div className="flex w-full items-center sm:flex-col">
         <div className="h-[70vh] w-1/2 sm:w-full">
           <dotlottie-player
