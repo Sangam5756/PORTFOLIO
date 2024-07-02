@@ -20,9 +20,9 @@ const Project_Slider = () => {
   return (
     <Slider {...settings}>
       {projects.map((project, index) => (
-        <div key={index} className='w-[500px] overflow-x-scroll projectscrollbar  mr-5 ' >
-          <div className="flex items-center h-[500px] w-[400px] justify-center gap-10 sm:flex-col">
-            <div>
+        <div key={index} className='w-[500px] overflow-x-scroll projectscrollbar mt-5 mr-5  flex items-center justify-center' >
+          <div className="gap-10 sm:flex-col">
+            <div className='flex  items-center justify-center'>
               <img src={project.image} alt="project-image" className="h-60 w-72  mix-blend-multiply" />
             </div>
             <div className="w-full ">
