@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import LeftSider from "./LeftSider";
 import Project_Slider from "./Project_Slider";
+import MessageMe from "../../components/MessageMe";
 function index() {
   return (
     <div>
@@ -16,6 +17,7 @@ function index() {
           {/* <Experiences /> */}
           <Projects />
           <Contact />
+          {/* <MessageMe/> */}
           <Footer />
           <LeftSider />
         </div>
