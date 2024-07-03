@@ -22,12 +22,12 @@ function intro() {
         <ProfileImage img={"photo1.jpg"} />
       </div>
 
-      <div className="flex  py-10 items-center  justify-between gap-3">
+      <div className="flex py-20 sm:py-10 items-center  justify-between gap-3">
 
-        <div className="h-[80vh] bg-primary flex flex-col items-start justify-center gap-8  sm:mt-2 py-20">
+        <div className="h-[80vh] bg-primary flex flex-col items-start justify-center gap-8  sm:mt-2  py-32">
 
           <h1 className="text-white font-semibold ">
-            <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=Hi+There!+👋;" />
+            {/* <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=Hi+There!+👋;" /> */}
 
           </h1>
 
@@ -38,7 +38,7 @@ function intro() {
           <h1 className="text-7xl w-full sm:text-3xl text-white font-semibold">
             {caption || " "}
           </h1>
-          <p className="text-white w-2/3">{description || " "}
+          <p className="text-white w-full ">{description || " "}
           </p>
           <div className="flex gap-3 mb-24 justify-between">
             <button className=" border-2 border-tertiery px-10 py-3 text-tertiery rounded"
@@ -52,7 +52,7 @@ function intro() {
           </div>
 
         </div>
-        <div className=" w-[500px] h-[200] sm:hidden p-13">
+        <div className=" w-[400px] h-[400] mb-32 sm:hidden ">
         <ProfileImage img={"photo1.jpg"}/>
         </div>
       </div>

@@ -69,7 +69,7 @@ function Projects() {
                 className=" text-2xl bg-red-600 hover:bg-red-700 py-1 px-3 text-center w-fit rounded-full text-white"
                 href={projects[selectedItemIndex].githubrepo || ""}
               >
-                Github-Repo
+                Github
               </a>
             </div>
           </div>

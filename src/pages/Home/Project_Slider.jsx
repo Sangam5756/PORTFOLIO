@@ -38,7 +38,7 @@ const Project_Slider = () => {
                   className="text-xl bg-red-600 hover:bg-red-700 py-1 px-3 text-center w-fit rounded mt-2 text-white"
                   href={project.githubrepo || ''}
                 >
-                  Github-Repo
+                  GITHUB
                 </a>
                {
                 project.link &&
