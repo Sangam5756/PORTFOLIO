@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { useRef } from "react";
 import About from "./About";
 import { Intro } from "../../../resources/intro.js"
+import ProfileImage from "../../components/ProfileImage.jsx";
 function intro() {
   const { loading, portfoliodata } = useSelector((state) => state.root);
   // const { intro } = portfoliodata;
@@ -17,31 +18,43 @@ function intro() {
   };
   return (
     <>
-      <div className="h-[80vh] bg-primary flex flex-col items-start justify-center gap-8 py-10">
-        <h1 className="text-white font-semibold ">
-          <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=Hi+There!+👋;" />
+      <div className=" hidden sm:flex items-center justify-center">
+        <ProfileImage img={"photo1.jpg"} />
+      </div>
 
-        </h1>
-        <h1 className=" text-7xl sm:text-3xl text-secondary font-semibold">
-          <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=I'm;" />
-          {firstName || " "} {lastName || " "}
-        </h1>
-        <h1 className="text-7xl sm:text-3xl text-white font-semibold">
-          {caption || " "}
-        </h1>
-        <p className="text-white w-2/3">{description || " "}
-        </p>
-        <div className="flex gap-3 justify-between">
-          <button className=" border-2 border-tertiery px-10 py-3 text-tertiery rounded"
-            onClick={handleGetStartedClick}>
-            Get Started
-          </button>
-          <button className=" border-2 border-tertiery px-10 py-3 text-tertiery rounded"
+      <div className="flex  py-10 items-center  justify-between gap-3">
+
+        <div className="h-[80vh] bg-primary flex flex-col items-start justify-center gap-8  sm:mt-2 py-20">
+
+          <h1 className="text-white font-semibold ">
+            <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=Hi+There!+👋;" />
+
+          </h1>
+
+          <h1 className=" text-7xl sm:text-3xl text-secondary font-semibold">
+            <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&vCenter=true&width=500&height=70&duration=3000&lines=I'm;" />
+            {firstName || " "} {lastName || " "}
+          </h1>
+          <h1 className="text-7xl w-full sm:text-3xl text-white font-semibold">
+            {caption || " "}
+          </h1>
+          <p className="text-white w-2/3">{description || " "}
+          </p>
+          <div className="flex gap-3 mb-24 justify-between">
+            <button className=" border-2 border-tertiery px-10 py-3 text-tertiery rounded"
+              onClick={handleGetStartedClick}>
+              Get Started
+            </button>
+            <button className=" border-2 border-tertiery px-10 py-3 text-tertiery rounded"
             ><a href="/resume.pdf" target="_blank">Get Resume</a>
-            
-          </button>
-        </div>
 
+            </button>
+          </div>
+
+        </div>
+        <div className=" w-[500px] h-[200] sm:hidden p-13">
+        <ProfileImage img={"photo1.jpg"}/>
+        </div>
       </div>
       <About aboutRef={aboutRef} />
 
