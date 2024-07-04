@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { IoSend } from "react-icons/io5";
+
 
 const MessageMe = () => {
     const form = useRef();
@@ -14,18 +16,18 @@ const MessageMe = () => {
             })
             .then(
                 () => {
-                    
+
                     toast.success("Successfully Sent");
                     form.current.reset();
                 },
                 (error) => {
                     toast.error('FAILED...', error.text);
-                    
+
                 },
             );
     };
 
-    
+
 
     return (
 
@@ -35,8 +37,12 @@ const MessageMe = () => {
             <label>Email</label>
             <input type="email" name="from_email" required className=' focus:bg-white curs focus:text-black text-white bg-primary rounded outline-none p-2' />
             <label>Message</label>
-            <textarea name="message" className=' focus:bg-white curs text-black bg-primary rounded outline-none p-2' maxLength={1000} />
-            <input type="submit" required className='bg-tertiery text-black hover:text-white  focus:text-black text-white hover:bg-primary px-2 py-1  cursor-pointer ' value="Send" />
+            <textarea name="message" className=' focus:bg-white curs  focus:text-black text-white bg-primary rounded outline-none p-2' maxLength={1000} />
+            <div className='flex items-center'>
+              
+              
+            <button type="submit" required className='bg-tertiery text-black hover:text-white hover:bg-red-800 duration-300 px-2 py-1 w-full cursor-pointer text-center ' >Send</button>
+            </div>
 
         </form>
 
