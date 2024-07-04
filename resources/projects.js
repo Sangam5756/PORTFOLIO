@@ -71,7 +71,7 @@ export const projects = [
       "This is a simple weather app built with React that allows users to search for weather information by city name. It retrieves data from the OpenWeatherMap API and displays temperature, humidity, and weather description for the specified city.",
     image:
       "https://github.com/Sangam5756/Weather_App/blob/master/src/asset/weather.png?raw=true",
-    link: "https://weather-app-weor.onrender.com/",
+    link: "https://weather-app-d00u.onrender.com/",
     technologies: [
       "React-js ",
       " Html",
@@ -80,7 +80,7 @@ export const projects = [
       " Material-UI ",
       " OpenWeatherMap API",
     ],
-    githubrepo: "https://github.com/Sangam5756/Weather_App.git",
+    githubrepo: "https://github.com/Sangam5756/weather-app.git",
     __v: 0,
     title: "Weather_Detection",
   },
