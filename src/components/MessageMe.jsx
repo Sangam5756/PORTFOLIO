@@ -37,7 +37,7 @@ const MessageMe = () => {
             <label>Email</label>
             <input type="email" name="from_email" required className=' focus:bg-white curs focus:text-black text-white bg-primary rounded outline-none p-2' />
             <label>Message</label>
-            <textarea name="message" className=' focus:bg-white curs  focus:text-black text-white bg-primary rounded outline-none p-2' maxLength={1000} />
+            <textarea name="message" className=' focus:bg-white curs  focus:text-black text-white bg-primary rounded outline-none p-2' maxLength={1000} required />
             <div className='flex items-center'>
               
               

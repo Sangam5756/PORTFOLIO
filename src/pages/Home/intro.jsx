@@ -19,7 +19,7 @@ function intro() {
   return (
     <>
       <div className=" hidden sm:flex items-center justify-center">
-        <ProfileImage img={"photo1.jpg"} />
+        <ProfileImage img={"photo2.jpg"} />
       </div>
 
       <div className="flex py-20 sm:py-10 items-center  justify-between gap-3">
@@ -53,7 +53,7 @@ function intro() {
 
         </div>
         <div className=" w-[400px] h-[400] mb-32 sm:hidden ">
-        <ProfileImage img={"photo1.jpg"}/>
+        <ProfileImage img={"photo2.jpg"}/>
         </div>
       </div>
       <About aboutRef={aboutRef} />
