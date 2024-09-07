@@ -46,7 +46,7 @@ function intro() {
               Get Started
             </button>
             <button className=" border-2 border-tertiery px-10 py-3 text-tertiery rounded"
-            ><a href="/resume.pdf" target="_blank">Get Resume</a>
+            ><a href="/resumeL.pdf" target="_blank">Get Resume</a>
 
             </button>
           </div>

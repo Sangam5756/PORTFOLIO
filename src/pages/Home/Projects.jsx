@@ -12,7 +12,7 @@ function Projects() {
       <div className="flex py-10 gap-20 sm:hidden ">
         <div className="sm:projectscroll">
           <div className="flex flex-col gap-10 border-l-2 border-[#135e4c82] sm:h-28 w-1/3 sm:gap-1 sm:flex-row sm:overflow-y-hidden sm:overflow-x-scroll sm:w-full">
-            <div className="flex sm:flex-row sm:gap-5 flex-col">
+            <div className="flex sm:flex-row sm:gap-5 flex-col w-full ">
               {projects.map((project, index) => (
                 <div
                   key={index}
@@ -21,17 +21,16 @@ function Projects() {
                     setSelectedItemIndex(index);
                   }}
                 >
+                  
+                    <h1
+                      className={`text-xl px-5 ${selectedItemIndex === index
+                        ? `text-tertiery  border-tertiery border-l-4 -ml-[3px] w-full py-3`
+                        : `text-white w-full`
+                        }`}
+                    >
+                      {project.title}
+                    </h1></div>
 
-                  <h1
-                    className={`text-xl px-5 ${selectedItemIndex === index
-                        ? `text-tertiery border-tertiery border-l-4 -ml-[3px] w-12 py-3`
-                        : `text-white`
-                      }`}
-                  >
-                    {project.title}
-                  </h1>
-                </div>
-                
 
 
               ))}
@@ -74,11 +73,11 @@ function Projects() {
             </div>
           </div>
         </div>
-        
+
       </div>
       <div className="hidden sm:block">
-        <Project_Slider/>
-        </div>
+        <Project_Slider />
+      </div>
     </div>
   );
 }
